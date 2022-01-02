@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-""" day 9 part 1 """
+""" day 9 part 2 """
 
 from collections import Counter
 import numpy as np
