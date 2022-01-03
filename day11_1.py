@@ -73,8 +73,6 @@ with open("day11-input", "r") as data:
         octo_grid = evolve_grid(octo_grid)
         seen = []
         to_flash = set(get_pre_flash(octo_grid))
-        # if len(to_flash) == 100:
-        #     break
         while len(to_flash) > 0:
             coord = to_flash.pop()
             if coord not in seen:
