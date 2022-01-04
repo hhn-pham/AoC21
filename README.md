@@ -1,4 +1,4 @@
-# AOC in Python
+# AoC 2021 in Python
 
 TFW discovered this after it ended.
 Also probably awful code but if it works, it works.
