@@ -4,6 +4,7 @@
 from collections import defaultdict
 from functools import lru_cache
 
+
 @lru_cache(maxsize=None)
 def dfs(start_name, seen, second_cave):
     """dfs"""

@@ -11,22 +11,14 @@ def fold(coordinates, fold_line, is_left):
             for line in coordinates
             if line[0] > fold_line
         ]
-        original_half = [
-            tuple(line)
-            for line in coordinates
-            if line[0] < fold_line
-        ]
+        original_half = [tuple(line) for line in coordinates if line[0] < fold_line]
     else:
         folded_half = [
             (line[0], 2 * fold_line - line[1])
             for line in coordinates
             if line[1] > fold_line
         ]
-        original_half = [
-            tuple(line)
-            for line in coordinates
-            if line[1] < fold_line
-        ]
+        original_half = [tuple(line) for line in coordinates if line[1] < fold_line]
     return list(set(original_half + folded_half))
 
 
