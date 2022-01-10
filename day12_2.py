@@ -1,4 +1,4 @@
-# #!/usr/bin/env python
+#!/usr/bin/env python
 """day 12 part 2"""
 
 from collections import defaultdict

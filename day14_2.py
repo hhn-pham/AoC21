@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """day 14 part 2"""
 from collections import Counter
-from types import new_class
 
 with open("day14-input", "r") as data:
     sequence = [line.strip("\n") for line in data.readlines()]
