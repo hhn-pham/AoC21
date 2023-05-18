@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-""" env """
+"""day 2 part 1"""
 coordinate = [0, 0]
 with open("day2-input", "r") as commands:
     for line in commands.readlines():
@@ -9,4 +9,4 @@ with open("day2-input", "r") as commands:
             coordinate[1] += int(line.split()[1])
         else:
             coordinate[1] -= int(line.split()[1])
-    print(coordinate[0] * coordinate[1])
+print(coordinate[0] * coordinate[1])

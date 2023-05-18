@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-""" env """
+"""day 4 part 1"""
 import numpy as np
-
 
 def is_bingo(board_bingo):
     """check bingo"""
@@ -40,11 +39,12 @@ with open("day4-input", "r") as puzzle_input:
         for line in list(puzzle_input.readlines()[1:])
         if len(line.strip("\n").split()) != 0
     ]
-    board, top_score = [], [0, 1000000]
-    for i in range(0, len(board_parser), 5):
-        board = [list(map(int, line)) for line in board_parser[i : i + 5]]
-        result = play_bingo(board, draws)
-        if result is not None and result[1] < top_score[1]:
-            top_score = result
+
+board, top_score = [], [0, 1000000]
+for i in range(0, len(board_parser), 5):
+    board = [list(map(int, line)) for line in board_parser[i : i + 5]]
+    result = play_bingo(board, draws)
+    if result is not None and result[1] < top_score[1]:
+        top_score = result
 
 print(top_score[0])
